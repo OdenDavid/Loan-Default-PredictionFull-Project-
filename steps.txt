@@ -1,0 +1,5 @@
+docker build -t datastream .
+
+docker run -p 9000:8080 datastream:latest
+
+curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"Gender":"Male", "Married":"Yes", "Dependents":"3+", "Education":"Graduate", "Self_Employed":"No", "ApplicantIncome":"5000.0", "CoapplicantIncome":3500.0", "LoanAmount":"10000", "Loan_Amount_Term":"360.0", "Credit_History":"0", "Property_Area":"Urban"}'

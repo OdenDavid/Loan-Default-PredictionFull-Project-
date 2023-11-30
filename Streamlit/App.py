@@ -20,7 +20,7 @@ if selected == "Home":
     col1, col2 = st.columns(2)
 
     with col1:
-        st.title(':blue[Access Loans Instantly]')
+        st.subheader(':blue[Access Loans Instantly]')
         st.caption(body="Welcome to Lendy - Your Gateway to Financial Freedom! \n\nAt Lendy, we understand that life is full of unexpected twists and turns, and sometimes you need a helping hand to navigate through. That's why we've created a seamless and user-friendly platform to connect you with the financial solutions you need. Say goodbye to lengthy processes and hello to quick and easy access to loans!")
         st.caption(unsafe_allow_html=True,
                 body="<b>Apply by filling our loan application forms and get access to loans now!!!</b>")
@@ -136,3 +136,10 @@ elif selected == "Apply":
                     st.toast('Application Submitted', icon='✅')
                 except Exception as e:
                     st.toast('Error Sending Request {}'.format(e), icon='❌')
+
+if selected == "About us":
+    st.subheader(':blue[Why Choose Lendy?]')
+    st.caption(unsafe_allow_html=True,body="<b>Instant Access to Loans:</b>\n\nNo more waiting around! At Lendy, we offer instant access to loans. Simply fill out our easy-to-use loan application forms, and you could have the funds you need in no time. We value your time, and our streamlined process ensures a hassle-free experience.")
+    st.caption(unsafe_allow_html=True,body="<b>Tailored Solutions for You:</b>\n\nWe believe that financial solutions should be as unique as you are. Our team at Lendy works tirelessly to understand your needs and provide personalized loan options that fit your lifestyle. Whether it's for a home renovation, education, or unexpected expenses, we've got you covered.")
+    st.caption(unsafe_allow_html=True,body="<b>Transparent and Fair:</b>\n\nWe believe in transparency every step of the way. No hidden fees or confusing terms. At Lendy, we are committed to providing clear and fair loan options, so you can make informed decisions about your financial future.")
+    st.caption(unsafe_allow_html=True,body="<b>Secure and Confidential:</b>\n\nYour security is our top priority. Rest easy knowing that your information is handled with the utmost confidentiality and security. Lendy employs industry-leading measures to protect your data, giving you peace of mind throughout the loan process.")

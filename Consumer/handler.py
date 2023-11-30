@@ -6,7 +6,7 @@ from email.message import EmailMessage
 import ssl
 import smtplib
 
-from xgboost import XGBClassifier
+import joblib
 import pandas as pd
 
 label_mappings = {'Gender': ['Male', 'Female'],
@@ -44,17 +44,21 @@ def lambda_handler(event, context):
         values = [label_mappings[key].index(data[key]) if key in label_mappings else data[key] for key in data]
         column = ["Gender", "Married", "Dependents", "Education", "Self_Employed", "ApplicantIncome", "CoapplicantIncome", "LoanAmount", "Loan_Amount_Term", "Credit_History", "Property_Area"]
         
-        #Infrence model
+        # Load files
+        # Load model and 
         try:
-            new_xgbc = XGBClassifier()
-            new_xgbc.load_model("model.json")
+            new_rf = joblib.load("model.joblib")
+            new_scaler = joblib.load("scaler.joblib")
         except FileNotFoundError as e:
             print("Model file not found")
-        
-        df = pd.DataFrame([values], columns=data)
-        xgb_preds = new_xgbc.predict(df)
 
-        if xgb_preds[0] == 0:
+        df = pd.DataFrame([values], columns=column)
+        # Preprocessing
+        data_normalized = new_scaler.fit_transform(df)
+
+        rf_preds = new_rf.predict(data_normalized)
+
+        if rf_preds[0] == 0:
             predicted = "Eligible"
         else:
             predicted = "Not Eligible"

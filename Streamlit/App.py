@@ -26,7 +26,7 @@ if selected == "Home":
                 body="<b>Apply by filling our loan application forms and get access to loans now!!!</b>")
 
     with col2:
-        image = Image.open('images/loans.png')
+        image = Image.open('loans.png')
         st.image(image)
 
 elif selected == "Apply":

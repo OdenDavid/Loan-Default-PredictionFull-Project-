@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 from datetime import datetime, timedelta
 import requests
+import os
 
 #image = Image.open('images/logo-no-background.png')
 #st.image(image)
@@ -26,7 +27,9 @@ if selected == "Home":
                 body="<b>Apply by filling our loan application forms and get access to loans now!!!</b>")
 
     with col2:
-        image = Image.open('loans.png')
+        path = os.path.dirname(__file__)
+        my_image = path+'/loans.png'
+        image = Image.open(my_image)
         st.image(image)
 
 elif selected == "Apply":

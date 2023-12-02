@@ -1,13 +1,5 @@
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "",
-            "Effect": "Allow",
-            "Principal": {
-                "Service": "apigateway.amazonaws.com"
-            },
-            "Action": "sts:AssumeRole"
-        }
-    ]
-}
+AmazonKinesisFullAccess
+AmazonSNSFullAccess
+AWSLambda_FullAccess
+AWSLambdaKinesisExecutionRole
+CloudWatchEventsFullAccess

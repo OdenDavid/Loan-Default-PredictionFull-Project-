@@ -53,6 +53,7 @@ def lambda_handler(event, context):
             print("Model file not found")
 
         df = pd.DataFrame([values], columns=column)
+
         # Preprocessing
         data_normalized = new_scaler.fit_transform(df)
 

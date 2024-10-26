@@ -10,21 +10,22 @@ Lendy is an innovative loan application system leveraging machine learning and A
 
 Folder Structure
 -------------------
-Lendy/
-Consumer/
-Dockerfile
-handler.py
-model.joblib
-scaler.joblib
-requirements.txt
-Producer/
-Producer.py
-Loan Data/
-loan_train.csv
-loan_test.csv
-Streamlit/
-App.py
-requirements.txt
+Lendy
+├── Project.ipynb
+├── Consumer
+│   ├── Dockerfile
+│   ├── handler.py
+│   ├── model.joblib
+│   ├── scaler.joblib
+│   └── requirements.txt
+├── Producer
+│   └── Producer.py
+├── Loan Data
+│   ├── loan_train.csv
+│   └── loan_test.csv
+└── Streamlit
+    ├── App.py
+    └── requirements.txt
 
 Components
 ------------
@@ -65,11 +66,6 @@ Contributing
 ------------
 Contributions are welcome! Please open an issue or submit a pull request.
 
-License
--------
-[DavidOden]
-
 Author
 --------
-Feel free to customize this README to fit your needs!
-Would you like me to add any specific sections or details?
+David Oden

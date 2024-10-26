@@ -3,7 +3,7 @@ Loan Default Prediction + MLOPS (AWS)
 
 Lendy: Machine Learning-based Loan Application System
 ===========================================================
-
+![Lendy](https://github.com/OdenDavid/Loan-Default-PredictionFull-Project-/blob/main/Lendyy.png)
 Overview
 -----------
 Lendy is an innovative loan application system leveraging machine learning and AWS services to predict loan defaulters. This project streamlines the loan application process, ensuring efficient and data-driven decision-making.
@@ -53,6 +53,8 @@ Machine Learning (Random Forest, XGBoost)
 AWS (API Gateway, Lambda, Kinesis Data Stream, ECR, SNS)
 Streamlit
 Docker
+
+![AWS](https://github.com/OdenDavid/Loan-Default-PredictionFull-Project-/blob/main/Pipeline.png)
 
 Getting Started
 ---------------

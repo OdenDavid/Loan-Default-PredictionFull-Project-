@@ -10,7 +10,7 @@ Lendy is an innovative loan application system leveraging machine learning and A
 
 Folder Structure
 -------------------
-`Lendy/
+Lendy/
 Consumer/
 Dockerfile
 handler.py
@@ -24,7 +24,7 @@ loan_train.csv
 loan_test.csv
 Streamlit/
 App.py
-requirements.txt`
+requirements.txt
 
 Components
 ------------
@@ -55,7 +55,7 @@ Docker
 
 Getting Started
 ---------------
-Clone the repository: git clone https://github.com/your-username/Lendy.git
+Clone the repository: git clone https://github.com/OdenDavid/Loan-Default-PredictionFull-Project-.git
 Install dependencies: pip install -r requirements.txt (in respective folders)
 Build Docker image: docker build -t lendy-consumer . (in Consumer folder)
 Deploy AWS Lambda functions

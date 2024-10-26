@@ -1,7 +1,6 @@
 # Loan-Default-PredictionFull-Project-
 Loan Default Prediction + MLOPS (AWS)
 
-Here's a sample GitHub README for the Lendy project:
 Lendy: Machine Learning-based Loan Application System
 ===========================================================
 

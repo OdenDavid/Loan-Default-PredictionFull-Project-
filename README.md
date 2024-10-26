@@ -11,7 +11,6 @@ Lendy is an innovative loan application system leveraging machine learning and A
 Folder Structure
 -------------------
 Lendy
-├── Project.ipynb
 ├── Consumer
 │   ├── Dockerfile
 │   ├── handler.py

@@ -10,8 +10,6 @@ def lambda_handler(event, context):
     
     data = json.loads(event["body"])
     
-    print(data)
-    
     try:
         for record in data:
             payload = bytes(json.dumps(record), 'utf-8')

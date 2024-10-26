@@ -55,13 +55,13 @@ def lambda_handler(event, context):
         df = pd.DataFrame([values], columns=column)
 
         # Preprocessing
-        data_normalized = new_scaler.fit_transform(df)
+        data_normalized = new_scaler.transform(df)
 
         rf_preds = new_rf.predict(data_normalized)
-
+        
         if rf_preds[0] == 0:
             predicted = "Eligible"
-        else:
+        elif rf_preds[0] == 1:
             predicted = "Not Eligible"
 
         try:

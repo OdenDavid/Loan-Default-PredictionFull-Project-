@@ -32,39 +32,39 @@ Lendy
 Components
 ------------
 1. Consumer
-Dockerfile: Docker configuration for consumer Lambda function
-handler.py: Lambda function handler for prediction
-model.joblib: Trained machine learning model
-scaler.joblib: Data scaler for feature normalization
-requirements.txt: Dependencies for consumer Lambda function
+   * Dockerfile: Docker configuration for consumer Lambda function
+   * handler.py: Lambda function handler for prediction
+   * model.joblib: Trained machine learning model
+   * scaler.joblib: Data scaler for feature normalization
+   * requirements.txt: Dependencies for consumer Lambda function
 2. Producer
-Producer.py: Lambda function handler for data processing
+   * Producer.py: Lambda function handler for data processing
 3. Loan Data
-loan_train.csv: Training dataset for machine learning model
-loan_test.csv: Testing dataset for machine learning model
+   * loan_train.csv: Training dataset for machine learning model
+   * loan_test.csv: Testing dataset for machine learning model
 4. Streamlit
-App.py: Streamlit application for user interface
-requirements.txt: Dependencies for Streamlit application
+   * App.py: Streamlit application for user interface
+   * requirements.txt: Dependencies for Streamlit application
 5. Project
-Project.ipynb: Model Building
+    * Project.ipynb: Model Building
 
 Technologies Used
 --------------------
-Python
-Machine Learning (Random Forest, XGBoost)
-AWS (API Gateway, Lambda, Kinesis Data Stream, ECR, SNS)
-Streamlit
-Docker
+* Python
+* Machine Learning (Random Forest, XGBoost)
+* AWS (API Gateway, Lambda, Kinesis Data Stream, ECR, SNS)
+* Streamlit
+* Docker
 
 ![AWS](https://github.com/OdenDavid/Loan-Default-PredictionFull-Project-/blob/main/Pipeline.png)
 
 Getting Started
 ---------------
-Clone the repository: git clone https://github.com/OdenDavid/Loan-Default-PredictionFull-Project-.git
-Install dependencies: pip install -r requirements.txt (in respective folders)
-Build Docker image: docker build -t lendy-consumer . (in Consumer folder)
-Deploy AWS Lambda functions
-Run Streamlit application: streamlit run App.py (in Streamlit folder)
+* Clone the repository: git clone https://github.com/OdenDavid/Loan-Default-PredictionFull-Project-.git
+* Install dependencies: pip install -r requirements.txt (in respective folders)
+* Build Docker image: docker build -t lendy-consumer . (in Consumer folder)
+* Deploy AWS Lambda functions
+* Run Streamlit application: streamlit run App.py (in Streamlit folder)
 
 Contributing
 ------------

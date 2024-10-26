@@ -25,7 +25,8 @@ Folder Structure
 │   └── loan_test.csv
 └── Streamlit
     ├── App.py
-    └── requirements.txt```
+    └── requirements.txt
+```
 
 Components
 ------------
